@@ -4,7 +4,7 @@ This Dockerfile builds on the official [`elixir`](https://hub.docker.com/_/elixi
 
 This image can be used either as a CLI entrypoint to the elixir ecosystem or to build and run elixir or phoenix applications.
 
-### Aliases
+The following aliases might be useful:
 
 ```SH
 alias elixir='
@@ -32,7 +32,7 @@ alias mix='
     -w "$PWD" \
     blankenshipz/elixir-phoenix \
     mix'
-```SH
+```
 
 ### Using this image for development
 
@@ -66,6 +66,8 @@ COPY . /usr/src/app/
 
 CMD ["mix", "phoenix.server"]
 ```
+
+And the `docker-compose.yml`: 
 
 ```SH
 # docker-compose.yml
