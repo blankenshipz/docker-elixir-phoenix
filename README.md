@@ -17,7 +17,7 @@ alias elixir='
     elixir'
 
 alias iex='
-  docker run
+  docker run \
     -it \
     --rm \
     -v "$PWD":"$PWD" \
