@@ -9,7 +9,6 @@ RUN \
   cd /var/lib/apt/lists && rm -fr *Release* *Sources* *Packages* && \
   truncate -s 0 /var/log/*log
 
-RUN echo $PHOENIX_VERSION
 RUN \
   mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phoenix_new-$PHOENIX_VERSION.ez
 
